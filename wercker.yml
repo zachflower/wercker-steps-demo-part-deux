@@ -3,6 +3,8 @@ box: ubuntu
 build:
   # The steps that will be executed on build
   steps:
+    - install-packages:
+      packages: ruby 
     - dlanileonardo/generate-changelog:
       github_token: $CHANGELOG_GITHUB_TOKEN
       github_user: $CHANGELOG_GITHUB_USER
