@@ -1,10 +1,8 @@
-box: ubuntu
+box: ruby 
 # Build definition
 build:
   # The steps that will be executed on build
   steps:
-    - install-packages:
-      packages: ruby rake 
     - dlanileonardo/generate-changelog:
       github_token: $CHANGELOG_GITHUB_TOKEN
       github_user: $CHANGELOG_GITHUB_USER
