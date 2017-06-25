@@ -1,0 +1,12 @@
+box: ubuntu
+# Build definition
+build:
+  # The steps that will be executed on build
+  steps:
+    - dlanileonardo/generate-changelog:
+      github_token: $CHANGELOG_GITHUB_TOKEN
+      github_user: $CHANGELOG_GITHUB_USER
+      github_repo: $CHANGELOG_GITHUB_REPO
+      github_name: $CHANGELOG_GITHUB_NAME
+      github_email: $CHANGELOG_GITHUB_EMAIL
+      github_branch: $CHANGELOG_GITHUB_BRANCH
